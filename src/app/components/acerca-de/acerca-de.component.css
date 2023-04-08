@@ -1,0 +1,46 @@
+
+/* */
+
+.row{
+    /* Separacion del margen interno con el margen exterior*/
+    padding: 20px;
+}
+
+div{
+    background-color: beige;
+    text-align: center;
+}
+
+/*                     Etilo de la foto de perfil 
+   Por medio de media queris se logra un comportamiendo diferente de los estilos.
+   Segun la resolucion que se este usando. Busco que en res alta la imagen quede
+   ensimada al banner, pero en resolucion baja, halla un padding entre estos. 
+*/
+
+
+@media (min-width: 576px){  
+    #fotoperfil{
+        position:absolute;
+        width: 15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        top: 600px;
+    }
+}
+
+@media (max-width: 575px){  
+    #fotoperfil{
+        position:absolute;
+        width: 30%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        left: 33%;
+        top: 630px;
+    }
+}
+
+
+#nombre{
+    font-weight: bold;
+    margin-top: 30%;
+}
