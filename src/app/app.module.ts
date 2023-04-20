@@ -15,6 +15,10 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HyskillsComponent } from './components/hyskills/hyskills.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { FoooterComponent } from './components/foooter/foooter.component';
+import { HttpClientModule } from '@angular/common/http';
+
+
+
 
 @NgModule({
   declarations: [
@@ -33,7 +37,8 @@ import { FoooterComponent } from './components/foooter/foooter.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
