@@ -8,7 +8,7 @@ import { persona } from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL = 'http://localhost:8080/personas/'
+  URL = 'http://portfoliobackend-production-2806.up.railway.app/personas/'
 
   constructor(private http: HttpClient) { }
 
@@ -17,6 +17,10 @@ export class PersonaService {
   }
 }
 /* 
+
+http://localhost:8080/personas/
+
+
 public getPersona(); Observable<persona>{}
 
 import { Observable } from 'rxjs';
